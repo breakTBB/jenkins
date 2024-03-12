@@ -1,0 +1,18 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                // 从 Git 仓库中检出代码
+                // git 'https://github.com/your-username/your-repo.git'
+            }
+        }
+        stage('Build') {
+            steps {
+                // 在这里添加构建步骤
+sh 'ls -al'
+            }
+        }
+    }
+}
